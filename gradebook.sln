@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1DB84415-7792-4B69-8286-91201B2337F9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GradeBook", "src\GradeBook\GradeBook.csproj", "{0ADEC30C-9E13-4830-B17A-A2BE501106DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0ADEC30C-9E13-4830-B17A-A2BE501106DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ADEC30C-9E13-4830-B17A-A2BE501106DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ADEC30C-9E13-4830-B17A-A2BE501106DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ADEC30C-9E13-4830-B17A-A2BE501106DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0ADEC30C-9E13-4830-B17A-A2BE501106DE} = {1DB84415-7792-4B69-8286-91201B2337F9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {333FD506-7D29-41D2-920A-A6FC434B8239}
+	EndGlobalSection
+EndGlobal
