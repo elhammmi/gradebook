@@ -2,7 +2,7 @@ using Microsoft.VisualBasic;
 
 namespace GradeBook
 {
-    class Book
+    public class Book
     {
         public Book()
         {
@@ -14,22 +14,21 @@ namespace GradeBook
             grades.Add(grade);
         }
         
-        public void ShowStatistics()
+        public Statistics GetStatistics()
         {
-            var result = 0.0;
-            var lowGrade = double.MaxValue;
-            var highGrade = double.MinValue;
-            foreach (var number in grades)
+            var result = new Statistics();
+            result.Low = double.MaxValue;
+            result.High = double.MinValue;
+            result.Average= 0.0;
+            foreach (var grade in grades)
             {   
-                lowGrade = Math.Min(number, lowGrade);
-                highGrade = Math.Max(number, highGrade);
-                result = result + number;
+                result.Low = Math.Min(grade, result.Low);
+                result.High = Math.Max(grade, result.High);
+                result.Average = result.Average + grade;
             }
-            var averageResult = result/ grades.Count;
+            result.Average = result.Average/ grades.Count;
 
-            Console.WriteLine($"The lowest grade is {lowGrade}");
-            Console.WriteLine($"The highest grade is {highGrade}");
-            Console.WriteLine($"The average grade is {averageResult}");
+            return result;
 
         }
 

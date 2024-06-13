@@ -11,6 +11,9 @@ class Program
         book.AddGrade(30);
         book.AddGrade(23.4);
         book.AddGrade(12.8);
-        book.ShowStatistics();
+        var result = book.GetStatistics();
+        Console.WriteLine($"The lowest grade is {result.Low}");
+        Console.WriteLine($"The highest grade is {result.High}");
+        Console.WriteLine($"The average grade is {result.Average}");
     }
 }
